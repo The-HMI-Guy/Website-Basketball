@@ -15,7 +15,7 @@ body{
   align-items: stretch;
   gap: 2tem;
   padding: 0 1rem;
-  font-size: 18pt;
+  font-size: 16pt;
 }
 
 .nav ul{
@@ -24,6 +24,7 @@ body{
   list-style: none;
   display:flex;
   gap: 1rem;
+  font-family: 'Carter One'
 }
 
 .nav a {
@@ -42,4 +43,8 @@ body{
 
 .nav li:hover{
   background-color: rgba(255, 167, 59, 0.719);
+}
+
+.font-loader{
+  font-family: 'Carter One'
 }
