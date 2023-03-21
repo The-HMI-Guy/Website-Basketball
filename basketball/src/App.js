@@ -18,6 +18,15 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Schedule" element={<Schedule />} />
           <Route path="/Teams" element={<Teams />} />
+          <Route path="/Teams/Varsity" element={<Teams team="Varsity" />} />
+          <Route
+            path="/Teams/Junior Varsity I"
+            element={<Teams team="Junior Varsity I" />}
+          />
+          <Route
+            path="/Teams/Junior Varsity II"
+            element={<Teams team="Junior Varsity II" />}
+          />
           <Route path="/Standings" element={<Standings />} />
           <Route path="/News" element={<News />} />
           <Route path="/Youth" element={<Youth />} />
