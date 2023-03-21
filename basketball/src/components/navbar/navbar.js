@@ -1,14 +1,9 @@
-import { Link, useMatch, useResolvedPath, useNavigate } from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export default function Navbar() {
-  const navigate = useNavigate();
+  const teamsPath = "/Teams";
+  const isTeamPathActive = useMatch({ path: `${teamsPath}/*`, end: false });
 
-  const handleTeamSelect = (event) => {
-    const team = event.target.value;
-    if (team) {
-      navigate(`/Teams/${team}`);
-    }
-  };
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
@@ -17,7 +12,9 @@ export default function Navbar() {
       <ul>
         <CustomLink to="/Schedule">Schedule/Results</CustomLink>
         <li className="dropdown">
-          <CustomLink to="/Teams">Teams</CustomLink>
+          <CustomLink to={teamsPath} forceActive={isTeamPathActive}>
+            Teams
+          </CustomLink>
           <div className="dropdown-menu">
             <Link to="/Teams/Varsity" className="dropdown-item">
               Varsity
@@ -40,11 +37,11 @@ export default function Navbar() {
   );
 }
 
-function CustomLink({ to, children, ...props }) {
+function CustomLink({ to, children, forceActive, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
   return (
-    <li className={isActive ? "active" : ""}>
+    <li className={isActive || forceActive ? "active" : ""}>
       <Link to={to} {...props}>
         {children}
       </Link>
