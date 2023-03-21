@@ -14,14 +14,12 @@ body {
   align-items: stretch;
   gap: 2rem;
   padding: 0 1rem;
-<<<<<<< HEAD
   font-size: 16pt;
-=======
+
 }
 
 .site-title {
   font-size: 2rem;
->>>>>>> 5f7e298acf55bcb8c70097d2d6bd5b2394df12bc
 }
 
 .nav ul {
@@ -62,11 +60,6 @@ body {
   background-color: rgba(255, 167, 59, 0.719);
 }
 
-<<<<<<< HEAD
-.font-loader{
-  font-family: 'Carter One'
-}
-=======
 .nav .dropdown-menu {
   display: none;
   position: absolute;
@@ -97,4 +90,3 @@ body {
   background-color: rgba(255, 167, 59, 0.719);
   text-decoration: none;
 }
->>>>>>> 5f7e298acf55bcb8c70097d2d6bd5b2394df12bc

@@ -1,13 +1,9 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export default function Navbar() {
-<<<<<<< HEAD
-  //const path = window.location.pathname;
-=======
   const teamsPath = "/Teams";
   const isTeamPathActive = useMatch({ path: `${teamsPath}/*`, end: false });
 
->>>>>>> 5f7e298acf55bcb8c70097d2d6bd5b2394df12bc
   return (
     <nav className="nav">
       <Link to="/" className="nav">
