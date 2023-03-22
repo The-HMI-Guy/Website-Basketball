@@ -90,3 +90,10 @@ body {
   background-color: rgba(255, 167, 59, 0.719);
   text-decoration: none;
 }
+
+/* Styles for Roster Grid */
+.VarRoster {
+  padding: 10px;
+  text-transform: uppercase
+  
+} 

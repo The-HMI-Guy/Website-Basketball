@@ -7,6 +7,7 @@ import Youth from "./pages/Youth";
 import Offseason from "./pages/Offseason";
 import History from "./pages/History";
 import Home from "./pages/Home";
+import TeamVarsityRoster from "./pages/Teams_Varsity";
 import { Route, Routes } from "react-router-dom";
 
 //comment test
@@ -19,7 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Schedule" element={<Schedule />} />
           <Route path="/Teams" element={<Teams />} />
-          <Route path="/Teams/Varsity" element={<Teams team="Varsity" />} />
+          <Route path="/Teams/Varsity" element={<TeamVarsityRoster />} />
           <Route
             path="/Teams/Junior Varsity I"
             element={<Teams team="Junior Varsity I" />}
